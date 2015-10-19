@@ -35,8 +35,7 @@ $(TESTS) : $(PROGRAM)
 
 %.err: %.conf
 	valgrind $(VALGRIND_OPTIONS) $(PROGRAM) < $< 1>file_$@.out 2>$@
-	valgrind $(VALGRIND_OPTIONS) $(PROGRAM) < $< 2>$@
-	valgrind $(VALGRIND_OPTIONS) $(PROGRAM) < $< > file_$@.out 2>>$@
+	valgrind $(VALGRIND_OPTIONS) $(PROGRAM) < $<               2>$@
 
 clean:
 	rm -rf $(RESULTS)
