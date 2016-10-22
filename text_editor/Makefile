@@ -4,7 +4,7 @@
 # в том каталоге, где он лежит в этот каталог, где 
 # лежат тесты.
 #
-# ls -s /xxxxxxx/repos/task_text_editor/editor ./testing_editor
+# ln -s /xxxxxxx/repos/task_text_editor/editor ./testing_editor
 #
 
 PROGRAM=./testing_editor
